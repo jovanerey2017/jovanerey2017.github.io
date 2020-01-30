@@ -1,0 +1,120 @@
+body{
+	margin: 0;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+.container{
+	max-width: 1140px;
+	margin: auto;
+}
+
+	.row{
+		display: flex;
+		flex-wrap: wrap;
+	}
+header{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	border-bottom: 1px solid #423940;
+	padding: 0px 15px;
+	z-index: 10;
+}
+header .row{
+	justify-content: space-between;
+	align-items:  center;
+}
+header .my-name a{
+	text-decoration: none;
+	font-size: 50px;
+	font-weight: 600;
+	color: #ffffff;
+	text-transform: uppercase;
+	position: relative;
+
+}
+header .my-name a::before{
+	content: '';
+	height: 3px;
+	background-color: #ffffff;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+
+}
+header .navbar{
+
+}
+header .navbar ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+header .navbar ul li{
+	display: inline-block;
+	margin-left: 100px;
+}
+header .navbar ul li a{
+	font size: 15px;
+	text-decoration: none;
+	line-height: 72px;
+	color: #ffffff;
+	display: block;
+	font-weight: 600;
+	position: relative;
+}
+header .navbar ul li a.active::before{
+	content: '';
+	height: 3px;
+	background-color: #ffffff;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	bottom: -1px;
+}
+#home{
+	min-height: 100vh;
+	background-image: url("image/cover.jpg");
+	background-size: cover;
+	background-position: center;
+
+}
+#home{
+	min-width: 100%;
+}
+.full-screen {
+	min-height: 100vh;
+}
+
+#home .home-content{
+	color:black;
+	flex: 0 0 100%;
+	max-width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+}
+#home .home-content .block{
+	flex: 0 0 100%;
+	max-width: 100%;
+
+}
+
+#home .home-content .block h6{
+	color:black;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+}
+#home .home-content .block h1{}
+#home .home-content .block h3{}
+
+
+
